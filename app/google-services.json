@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "332192384540",
+    "project_id": "github-action-test-b640e",
+    "storage_bucket": "github-action-test-b640e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:332192384540:android:539753930bef1d33d4c1d9",
+        "android_client_info": {
+          "package_name": "com.mozzet.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "332192384540-601vn1su8rmm5pj4j52c9r0539djjoju.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3Cn52rGKIMgUVR1XAk48mijCNs569_yo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "332192384540-601vn1su8rmm5pj4j52c9r0539djjoju.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

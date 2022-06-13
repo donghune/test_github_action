@@ -59,5 +59,13 @@ jobs:
           SLACK_CHANNEL: "#github_actions_test"
           SLACK_COLOR: "#FF5252"
           SLACK_MESSAGE: "commit : $"
-          SLACK_WEBHOOK: $
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+
+      - name: Firebase App Distribution
+      uses: hasretsariyer/firebase-app-distribution-github-action@v1
+      with:
+        app_id: ${{secrets.FIREBASE_APP_ID}}
+        firebase_token: ${{secrets.FIREBASE_TOKEN}}
+        app_file: app-release.apk
+        tester_groups: maintainers
 
