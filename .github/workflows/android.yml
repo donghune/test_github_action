@@ -22,7 +22,7 @@ jobs:
           SLACK_CHANNEL: "#github_actions_test"
           SLACK_COLOR: "#CCCCCC"
           SLACK_MESSAGE: "commit : $"
-          SLACK_WEBHOOK: $
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
 
       - name: set up JDK 11
         uses: actions/setup-java@v3
@@ -47,7 +47,7 @@ jobs:
           SLACK_CHANNEL: "#github_actions_test"
           SLACK_COLOR: "#00BFA5"
           SLACK_MESSAGE: "commit : $\n<$/$/$|파일다운로드>, <$$/|브라우징>"
-          SLACK_WEBHOOK: $
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
 
       - name: Slack Notification Finish With Fail
         uses: rtCamp/action-slack-notify@v2
